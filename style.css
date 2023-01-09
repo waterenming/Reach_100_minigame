@@ -16,6 +16,8 @@ body {
 .middle {
     float: left;
     position: relative;
+    margin-top: 80px;
+    font-size: larger;
 }
 
 .rectright {
@@ -30,4 +32,9 @@ body {
     z-index: -1;
   }
 
+.iconcolor {
+    color: red;
+    margin-right: 10px;
+    font-size: larger;
+}
 
