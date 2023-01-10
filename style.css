@@ -40,7 +40,7 @@ body {
 .rolldice {
     float: left;
     position: relative;
-    margin-top: 450px;
+    margin-top: 160px;
     font-size: larger;
 }
 
@@ -67,8 +67,24 @@ body {
   height: 100px;
   width: 180px;
   background-color: rgb(233, 90, 55);
-  margin-top: 320px;
+  margin-top: 180px;
   margin-left: 320px;
 }
 
+.score {
+  color: red;
+  font-size: 100px;
+}
+
+.currentscore {
+  color: white;
+  font-size: 50px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin-top: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
