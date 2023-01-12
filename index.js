@@ -1,24 +1,16 @@
-let currentscore1 = 0;
-let currentscore2 = 0;
+let currentscore = 0;
 let player1score = 0;
 let player2score = 0;
 let randomNumber = 0;
+let player = 0;
 
 const gamestart = document.getElementById("gamestart");
 const roll = document.getElementById("roll");
 const hold = document.getElementById("hold");
 
-gamestart.addEventListener("click", start);
-
-function start() {
-
-}
-
 
 const rolldice = function() {
     randomNumber = Math.floor(Math.random() * 6) + 1;
-
-//const diceface = document.getElementById("diceimage");
 
 if (randomNumber === 1) {
     document.getElementById("diceimage").src="images/dice_one.png"; 
@@ -38,10 +30,41 @@ if (randomNumber === 1) {
   else if (randomNumber === 6) {
     document.getElementById("diceimage").src="images/dice_six.png";
   }
+
+  if (randomNumber !== 1) {
+    currentscore += randomNumber;
+    score();
+  } else {
+    changePlayer();
+  }
   
 }
 
+
+function changePlayer() {
+  if (player === 0) {
+  player = player + 1;
+  return rolldice;
+  } else {
+  player = player - 1;
+  }
+}
+
+function score() {
+  if (player === 0) {
+    document.getElementById("currentscore1").innerHTML = currentscore
+  } else {
+    document.getElementById("currentscore2").innerHTML = currentscore
+  }
+}
+
+function holdscore() {
+  
+}
+
+
 roll.addEventListener("click", rolldice);
+
 
 
 
