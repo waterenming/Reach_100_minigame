@@ -91,7 +91,28 @@ function holdscore() {
   
 }
 
+function showElem(elem) {
+  elem.style.display = "inline-block";
+}
 
+function hideElem(elem) {
+  elem.style.display = "none";
+}
+
+function newgame() {
+  currentscore = 0;
+  player1score = 0;
+  player2score = 0;
+  randomNumber = 0;
+  player = 1;
+  document.getElementById("diceimage").src="images/dice_one.png";
+  showElem(dot1);
+  hideElem(dot2);
+  document.getElementById("currentscore1").innerHTML = 0;
+  document.getElementById("currentscore2").innerHTML = 0;
+  document.getElementById("score1").innerHTML = 0;
+  document.getElementById("score2").innerHTML = 0;
+}
 
 
 roll.addEventListener("click", rolldice);

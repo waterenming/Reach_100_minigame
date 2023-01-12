@@ -91,3 +91,13 @@ body {
 .pointer {
   cursor: pointer;
 }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(214, 26, 26);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
