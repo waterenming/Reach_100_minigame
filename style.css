@@ -60,30 +60,30 @@ body {
 
 .player {
   margin-top: 120px;
-  font-size: 70px;
+  font-size: 25px;
 }
 
 .currentbox {
-  height: 100px;
-  width: 180px;
+  height: 80px;
+  width: 100px;
   background-color: rgb(233, 90, 55);
-  margin-top: 180px;
-  margin-left: 320px;
+  margin-top: 150px;
+  margin-left: 20px;
 }
 
 .score {
   color: red;
-  font-size: 100px;
+  font-size: 50px;
 }
 
 .currentscore {
   color: white;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .image {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   margin-top: 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -93,11 +93,120 @@ body {
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   background-color: rgb(214, 26, 26);
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-left: 20px;
 }
+
+
+@media screen and (min-width: 768px) {
+  .player {
+    margin-top: 120px;
+    font-size: 70px;
+  }
+  .score {
+    color: red;
+    font-size: 100px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(214, 26, 26);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+    margin-top: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .currentbox {
+    height: 100px;
+    width: 180px;
+    background-color: rgb(233, 90, 55);
+    margin-top: 250px;
+    margin-left: 100px;
+  }
+  .currentscore {
+    color: white;
+    font-size: 50px;
+  }
+  .newgame {
+    float: left;
+    position: relative;
+    margin-top: 80px;
+    font-size: 30px;
+  }
+  .rolldice {
+    float: left;
+    position: relative;
+    margin-top: 280px;
+    font-size: 30px;
+  }
+
+  .holdbutton {
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .player {
+    margin-top: 120px;
+    font-size: 70px;
+  }
+  .score {
+    color: red;
+    font-size: 100px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(214, 26, 26);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .currentbox {
+    height: 100px;
+    width: 180px;
+    background-color: rgb(233, 90, 55);
+    margin-top: 180px;
+    margin-left: 320px;
+  }
+  .currentscore {
+    color: white;
+    font-size: 50px;
+  }
+  .rolldice {
+    float: left;
+    position: relative;
+    margin-top: 130px;
+    font-size: 30px;
+  }
+  .holdbutton {
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
+
+
